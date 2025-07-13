@@ -1,7 +1,18 @@
 const express = require("express");
 const app = express();
-app.use("/", (req, res) => {
-  res.send("Root of the, World!");
+// app.use("/", (req, res) => {
+//   res.send("Root of the, World!");
+// });
+app.get("/user", (req, res) => {
+  res.send({
+    name: "Atul",
+    age: 25,
+    city: "Delhi",
+  });
+});
+app.post("/user", (req, res) => {
+  console.log("Save User Data to the Database");
+  res.send("User Data Saved Successfully")
 });
 app.use("/test", (req, res) => {
   res.send("TESTING, World!");
