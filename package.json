@@ -1,0 +1,20 @@
+{
+  "name": "dev_community_backend",
+  "version": "1.0.0",
+  "description": "Community for Developers to interact with each Other.🚀🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node src/app.js",
+    "dev" : "nodemon src/app.js"
+  },
+  "author": "Atul Chauhan",
+  "license": "ISC",
+  "keywords": [
+    "NodeJS",
+    "MongoDB"
+  ],
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
